@@ -1,0 +1,57 @@
+Basic Server Hardware Components
+Server hardware is typically more robust and designed for continuous, heavy-duty use compared to personal computers. Here are the basic components:
+
+1. Central Processing Unit (CPU)
+The CPU is the heart of the server. It processes instructions and performs computations necessary for running software applications and services. Servers generally have more powerful CPUs or multiple CPUs to handle the increased workload and provide better multitasking capabilities.
+
+Multi-core processors: Servers often use multi-core processors, which allow them to handle more tasks simultaneously.
+Performance: The CPU’s performance is essential for tasks like database processing, file serving, and running virtual machines.
+
+2. Memory (RAM)
+RAM (Random Access Memory) is temporary storage that provides quick access to data that is actively being used or processed. Servers require large amounts of RAM to ensure they can handle multiple simultaneous requests or processes without slowing down.
+
+ECC (Error-Correcting Code) RAM: Servers typically use ECC RAM, which can detect and correct memory errors, ensuring higher reliability for critical workloads.
+3. Storage
+Storage in a server is used to store data, applications, and the operating system. Servers typically use high-capacity storage drives such as HDDs (Hard Disk Drives) or SSDs (Solid State Drives), with SSDs being faster and more reliable.
+
+RAID (Redundant Array of Independent Disks): RAID is often used in servers to provide redundancy (backup) and improve performance by combining multiple physical storage devices into a single logical unit.
+
+4. Power Supply
+Servers require a reliable and efficient power supply to operate continuously without interruptions. Redundant power supplies are often used in servers to ensure there is no downtime if one power supply fails.
+Redundant Power Supply Units (PSUs): These allow servers to continue running if one PSU fails.
+
+5. Network Interface Cards (NICs)
+The NIC allows the server to communicate over the network with other computers, devices, or users. Servers typically have multiple NICs to ensure redundancy and higher throughput.
+Gigabit Ethernet or 10Gb Ethernet: Common speeds for server NICs that enable fast data transfer across networks.
+
+6. Motherboard
+The motherboard connects all the hardware components together, including the CPU, RAM, storage devices, and network interfaces. It often supports multiple CPU sockets, high RAM capacity, and expansion slots for additional network cards or storage controllers.
+
+7. Cooling Systems
+Servers generate heat, and it is crucial to have proper cooling systems to ensure their components remain within safe temperature limits. Servers typically use air cooling (with fans) or liquid cooling for more advanced cooling needs.
+
+Introduction to Virtualization
+Virtualization refers to the creation of virtual versions of physical resources, such as servers, storage devices, or networks. It allows a single physical server to run multiple virtual machines (VMs), each with its own operating system and applications, on the same hardware.
+
+Virtualization is a fundamental technology used to maximize resource utilization, improve flexibility, and reduce costs in modern data centers.
+
+Key Components of Virtualization:
+
+Hypervisor: The software layer that enables virtualization. It sits between the hardware and virtual machines, allocating resources (CPU, RAM, storage) to VMs. There are two types of hypervisors:
+
+Type 1 (Bare-metal hypervisor): Runs directly on the physical hardware (e.g., VMware ESXi, Microsoft Hyper-V).
+Type 2 (Hosted hypervisor): Runs on top of a host operating system (e.g., VirtualBox, VMware Workstation).
+Virtual Machines (VMs): Virtualized instances of operating systems and applications that run on top of the hypervisor. VMs behave as if they were independent physical computers, but they share the same underlying physical hardware.
+
+Virtual Storage: Allows virtual machines to access storage resources, which may be located on physical storage devices or distributed storage systems.
+
+Benefits of Virtualization:
+Resource Efficiency: Multiple virtual machines can run on a single physical server, increasing server utilization and reducing hardware costs.
+Isolation: Virtual machines are isolated from each other, meaning that if one VM crashes, it does not affect others.
+Flexibility: Virtualization allows for rapid provisioning, cloning, and migration of VMs between physical servers, providing flexibility in managing workloads.
+Disaster Recovery: Virtual machines can be easily backed up and restored, and they can be moved to different hardware in case of failure.
+
+Common Uses of Virtualization:
+Server Consolidation: Reducing the number of physical servers by running multiple virtual servers on a single host.
+Testing and Development: Creating virtual environments for testing software or configurations without affecting production systems.
+Cloud Computing: Virtualization is a key technology behind cloud computing, where resources are abstracted and provided as virtual instances to users.
