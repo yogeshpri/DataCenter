@@ -1,0 +1,94 @@
+Introduction to RAID (Redundant Array of Independent Disks)
+RAID is a technology used to combine multiple hard drives or SSDs into a single logical unit to improve performance, increase data redundancy, and provide fault tolerance. RAID levels define how data is distributed across multiple drives in the array.
+
+Common RAID Levels:
+
+RAID 0 (Striping): Data is split evenly across two or more disks. This increases performance because multiple disks can read/write simultaneously. However, there is no redundancy; if one drive fails, all data is lost.
+RAID 1 (Mirroring): Data is duplicated (mirrored) across two disks. This provides redundancy, as one disk can fail without losing data, but it doesn’t improve performance much.
+RAID 5 (Striping with Parity): Data is striped across multiple disks with parity information stored on a separate disk. RAID 5 offers a good balance of redundancy and performance. One disk can fail without data loss.
+RAID 6 (Striping with Double Parity): Similar to RAID 5 but with double parity, allowing for two drives to fail without data loss. However, RAID 6 incurs a performance penalty due to the extra parity calculations.
+RAID 10 (1+0): A combination of RAID 1 and RAID 0. Data is mirrored, and then the mirrored sets are striped. This provides both redundancy and performance but requires at least four disks.
+Advantages of RAID:
+
+Redundancy: Certain RAID levels provide redundancy to protect against data loss from disk failures.
+Performance: Some RAID levels improve read/write speeds by distributing data across multiple drives.
+Scalability: RAID arrays can be expanded by adding additional disks.
+Disadvantages of RAID:
+
+Complexity: RAID arrays can be complex to set up and manage.
+Cost: Additional disks and RAID hardware increase costs.
+Recovery time: Rebuilding a RAID array after a failure can be time-consuming.
+Backup and Recovery Concepts
+Backup and recovery are critical components of a data management strategy to ensure business continuity and data protection. They involve creating copies of data to safeguard it against loss, corruption, or disaster and having a plan in place to restore that data when necessary.
+
+Key Backup Strategies:
+
+Full Backup: A complete copy of all data. It’s time-consuming and requires significant storage space but provides the most comprehensive data protection.
+Incremental Backup: Only the data that has changed since the last backup is copied. This method is faster and uses less storage but requires a full backup to restore data.
+Differential Backup: Backs up all data that has changed since the last full backup. It provides a middle ground between full and incremental backups in terms of speed and storage usage.
+Backup Methods:
+
+On-site backups: Backups stored on local devices like external hard drives or network-attached storage. Fast access but vulnerable to local disasters (fire, flood).
+Off-site backups: Backups stored at a different location (e.g., in a cloud or another physical location). Provides protection against local disasters but may have slower recovery times.
+Cloud backups: Backing up data to a remote cloud service offers scalable storage and off-site protection. This can be done automatically and can be accessed from anywhere.
+Backup Recovery:
+
+Restoration: The process of retrieving data from a backup and restoring it to its original or a new location.
+Disaster Recovery (DR): A comprehensive plan that includes data backup and other IT processes to ensure business continuity in case of disasters (natural, technological, or human errors).
+Best Practices for Backup and Recovery:
+
+Regularly test backups to ensure they can be restored successfully.
+Use the 3-2-1 backup strategy: 3 total copies of your data, 2 local copies, and 1 off-site copy.
+Automate backups to ensure they happen consistently.
+Consider backup encryption to protect sensitive data.
+
+What is a Server?
+A server is a specialized computer or software system designed to provide services, resources, or data to other computers (clients) over a network. Servers are typically more powerful and have higher capacity for handling data, requests, and processing than regular personal computers.
+
+In a networked environment, servers perform essential roles like hosting websites, managing databases, handling email traffic, or serving files. Servers may run specialized software depending on their purpose, and they often work in conjunction with other servers to support various operations for an organization or service.
+
+The key characteristics of a server include:
+
+Performance: Servers are designed to handle high-volume data traffic and concurrent requests efficiently.
+Reliability: Servers are built to run continuously and be highly available, ensuring minimal downtime.
+Security: Servers need robust security mechanisms to protect data and prevent unauthorized access.
+Types of Servers
+There are many different types of servers, each serving specific functions. Let’s look at a few common ones:
+
+1. File Server
+A file server is a server that stores and manages files so that multiple users can access, share, and store data over a network. File servers are often used in businesses or organizations to centralize data storage, making it easier to manage, back up, and secure files.
+
+Functions of a File Server:
+
+Centralized storage of documents, images, videos, and other files.
+Allowing users to access shared files from different devices or locations.
+Managing user access permissions to control who can view, modify, or delete files.
+Common Features:
+File sharing protocols like SMB (Server Message Block) for Windows or NFS (Network File System) for UNIX/Linux.
+Backup and disaster recovery capabilities.
+
+2. Web Server
+A web server is a server that stores, processes, and serves web pages to clients over the internet. It handles HTTP (HyperText Transfer Protocol) requests, and delivers content like HTML, CSS, JavaScript, and multimedia to web browsers.
+
+Functions of a Web Server:
+Hosting websites and web applications.
+Processing requests from clients (browsers) and delivering appropriate responses (e.g., HTML pages or JSON data).
+Ensuring secure communication through HTTPS (with SSL/TLS encryption).
+
+Common Web Servers:
+Apache HTTP Server: An open-source web server software commonly used for hosting websites.
+NGINX: A high-performance web server known for handling high traffic loads.
+Microsoft IIS (Internet Information Services): A web server for Windows-based servers.
+
+3. Database Server
+A database server is a server that stores and manages databases and handles client requests for data retrieval and manipulation. It supports multi-user environments by allowing multiple clients to access and query the database simultaneously.
+
+Functions of a Database Server:
+Storing, organizing, and managing data in relational databases (e.g., MySQL, PostgreSQL) or non-relational databases (e.g., MongoDB).
+Handling SQL queries and returning the appropriate data to clients.
+Ensuring data integrity, security, and backup.
+Supporting large-scale applications, including web applications and enterprise systems.
+Common Database Servers:
+MySQL: An open-source relational database commonly used in web applications.
+Oracle Database: A powerful relational database system used by enterprises for critical applications.
+Microsoft SQL Server: A relational database server used primarily in Windows environments.
